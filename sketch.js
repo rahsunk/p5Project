@@ -1,3 +1,5 @@
+// Image and sound files to be added
+
 let oneXPos = 75;
 let oneYPos = 100;
 let oneLeft, oneRight, oneTop, oneBottom;

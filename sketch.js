@@ -1,5 +1,3 @@
-// Image and sound files to be added
-
 let oneXPos = 75;
 let oneYPos = 100;
 let oneLeft, oneRight, oneTop, oneBottom;
@@ -73,12 +71,12 @@ function sleep(milliseconds) {
 
 // Images used
 function preload(){
-  spikeImg=loadImage('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/spike_block.png?v=1658636913709')
-  coinImg=loadImage('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/coin.png?v=1658552081818')
-  diamondImg=loadImage('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/diamond.png?v=1658553321364')
-  skyImg=loadImage('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/sky.webp?v=1658637988284')
-  spaceImg=loadImage('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/space_pixel.jpg?v=1658638048642')
-  waterImg=loadImage('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/water.jpg?v=1658638107666')
+  spikeImg=loadImage('assets/spike_block.png')
+  coinImg=loadImage('assets/coin.png')
+  diamondImg=loadImage('assets/diamond.png')
+  skyImg=loadImage('assets/sky.webp')
+  spaceImg=loadImage('assets/space.jpg')
+  waterImg=loadImage('assets/water.jpg')
 }
 
 function setup() {
@@ -90,14 +88,14 @@ function setup() {
   textFont("Georgia")
   
 //   Sound used
-  coinSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/coin_sound.mp3?v=1658602810200')
-  spikeSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/Windows%20XP%20Hardware%20Fail%20(amplified).wav?v=1658671322774')
-  diamondSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/blue_coin.mp3?v=1658604814817')
-  menuSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/04%20Menu.mp3?v=1658641307256')
-  skySound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/13%20Sky%20Garden.mp3?v=1658639710575')
-  spaceSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/20%20Rainbow%20Road.mp3?v=1658640149460')
-  waterSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/08%20Shy%20Guy%20Beach%20%26%20Cheep-Cheep%20Island%20.mp3?v=1658640144230')
-  congratsSound=loadSound('https://cdn.glitch.global/23602152-f811-42c9-a0f5-556214d617b7/classic%20tada.wav?v=1658639257216')
+  coinSound=loadSound('assets/coin_sound.mp3')
+  spikeSound=loadSound('assets/spike_sound.wav')
+  diamondSound=loadSound('assets/blue_coin.mp3')
+  menuSound=loadSound('assets/menu.mp3')
+  skySound=loadSound('assets/sky_music.mp3')
+  spaceSound=loadSound('assets/space_music.mp3')
+  waterSound=loadSound('assets/water_music.mp3')
+  congratsSound=loadSound('assets/tada.wav')
   
 //   A random backgroud from a list of 3 is selected before each game.
   backgrounds.push(skyImg,spaceImg,waterImg)
